@@ -13,7 +13,7 @@ body {
   /* divisoes da pagina */
   
   .topo {
-    height: 150px;
+    height: 100px;
   }
   
   .meio {
@@ -35,15 +35,14 @@ body {
   .organiza_menu{
     display: flex;
     justify-content: space-between;
+    height: 100%;
     align-items: center;
-    margin: 20px 0;
   }
   .menu ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 0;
-    margin: 0;
     color: #05205a;
     font-size: 14px;
     
