@@ -1,62 +1,104 @@
 /* estrutura da pagina */
 
 body {
-    margin: 0;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  }
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+/* divisoes da pagina */
+
+.topo {
+  height: 80px;
+}
+
+.meio {
+  background-color: rgb(184, 184, 184);
+  height: 400px;
+}
+
+.rodape {
+  background-color: rgb(247, 247, 247);
+  height: 216px;
+}
+
+/* conteudo do topo */
+
+.menu {
+  width: 245px;
+}
+
+.organiza_menu{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  color: #05205a;
+  font-size: 14px;
   
-  .container {
-    width: 1110px;
-    margin: 0 auto;
-  }
-  
-  /* divisoes da pagina */
-  
-  .topo {
-    height: 100px;
-  }
-  
-  .meio {
-    background-color: rgb(38, 169, 179);
-    height: 150px;
-  }
-  
-  .rodape {
-    background-color: rgb(0, 89, 255);
-    height: 150px;
-  }
-  
-  /* conteudo do topo */
-  
-  .menu {
-    width: 245px;
-  }
-  
-  .organiza_menu{
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    align-items: center;
-  }
-  .menu ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0;
-    color: #05205a;
-    font-size: 14px;
-    
-  }
-  .acao{
-    width: 245px;
-    text-align: right;
-  }
-  .btn {
-    border: none;
-    background-color: #111B47;
-    padding: 9px 75px;
-    border-radius: 2px;
-    font-family: 'Roboto';
-    color: #fff;
-  }
-  
+}
+.acao{
+  width: 245px;
+  text-align: right;
+}
+.btn {
+  border: none;
+  background-color: #111B47;
+  padding: 9px 75px;
+  border-radius: 2px;
+  font-family: 'Roboto';
+  color: #fff;
+}
+
+/* rodapé */ 
+
+.rodape-divs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rodape-parte1{
+  padding-bottom: 20px;
+  padding-top: 50px;
+  border-bottom: 1px solid #ccc;
+}
+h5{
+  font-weight: 400;
+}
+.acao-rodape{
+  width: 150px;
+  text-align: right;
+}
+.btn-rodape{
+  border: none;
+  background-color: #111B47;
+  padding: 7px 50px;
+  border-radius: 2px;
+  font-family: 'Roboto';
+  color: #fff;
+}
+.rodape-parte2{
+  padding: 15px 0;
+}
+.rodape-menu ul, .rodape-icons ul{
+  list-style: none;
+  display: flex;
+  width: 245px;
+  justify-content: space-between;
+  padding: 0;
+}
+.rodape-menu ul li{
+  font-size: 14px;
+  font-weight: 400;
+  color: #002f94;
+}
