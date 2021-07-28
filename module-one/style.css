@@ -15,14 +15,8 @@ body {
 .topo {
   height: 80px;
 }
-
-.meio {
-  background-color: rgb(184, 184, 184);
-  height: 400px;
-}
-
 .rodape {
-  background-color: rgb(247, 247, 247);
+  background-color: #FBFBFB;
   height: 216px;
 }
 
@@ -43,7 +37,7 @@ body {
   justify-content: space-between;
   list-style: none;
   padding: 0;
-  color: #05205a;
+  color: #505F98;
   font-size: 14px;
   
 }
@@ -58,6 +52,33 @@ body {
   border-radius: 2px;
   font-family: 'Roboto';
   color: #fff;
+}
+
+/* conteúdo do meio */ 
+
+.group{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+}
+.group-img img{
+  height: 500px;
+}
+.group-text{
+  padding-right: 30px;
+}
+.group-text h1{
+  font-size: 36px;
+  font-weight: 500;
+}
+.group-text p{
+  font-weight: 300;
+  color: #6F7CB2;
+}
+.group-text button{
+  margin-top: 25px;
+  padding: 12px 65px;
+  font-size: 16px;
 }
 
 /* rodapé */ 
@@ -100,5 +121,5 @@ h5{
 .rodape-menu ul li{
   font-size: 14px;
   font-weight: 400;
-  color: #002f94;
+  color: #6F7CB2;
 }
