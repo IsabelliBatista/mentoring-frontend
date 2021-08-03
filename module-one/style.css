@@ -123,26 +123,59 @@ h5{
   font-weight: 400;
   color: #6F7CB2;
 }
-
+.menu-mobile .menu{
+  visibility: hidden;
+  height: 0;
+}
 /* Responsivo */ 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
   .container{
     width: 90%;
     margin: 0 auto;
   }
-  .menu{
-    width: 40px;
-    height: 40px;
-    border: 1px solid #000;
-    border-radius: 3px;
-  }
   .organiza_menu{
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  .organiza_menu .acao, .menu ul{
+  .organiza_menu .acao, .organiza_menu .menu{
     display: none;
   }
+  .menuzinho{
+    cursor: auto;
+  }
+  .menuzinho div{
+    width: 30px;
+    height: 3px;
+    background: #000;
+    border-radius: 4px;
+    margin: 5px 0;
+  }
+
+  .visible .menu{
+    height: 110px;
+    visibility: visible;
+    
+  }
+  .menu-mobile .menu{
+    transition: height 0.5s ease-out;
+    background: rgb(243, 243, 243);
+    text-align: center;
+    box-shadow: inset 0 2px 5px #c0c0c0;
+    width: 100%;
+  }
+  .menu-mobile .menu ul{
+    flex-direction: column;
+  }
+  .menu-mobile .menu ul li{
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 10px 0px;
+
+  }
+  
+
+
+
   .group{
     padding: 30px 10px;
     flex-direction: column-reverse;
@@ -159,7 +192,7 @@ h5{
     height: 200px;
   }
   .rodape{
-    height: 290px;
+    height: auto;
   }
   .rodape-divs{
     flex-direction: column-reverse;
@@ -168,4 +201,5 @@ h5{
   .btn-rodape{
     display: none;
   }
+
 }
