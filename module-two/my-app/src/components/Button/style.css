@@ -1,0 +1,12 @@
+.acao{
+    width: 245px;
+    text-align: right;
+  }
+.btn {
+    border: none;
+    background-color: #111B47;
+    padding: 9px 75px;
+    border-radius: 2px;
+    font-family: 'Roboto';
+    color: #fff;
+}

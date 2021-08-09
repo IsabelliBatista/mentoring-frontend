@@ -1,0 +1,11 @@
+.menu {
+    width: 245px;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    color: #505F98;
+    font-size: 14px;
+}
