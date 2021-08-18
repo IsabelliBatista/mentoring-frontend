@@ -1,0 +1,52 @@
+@import "../../styles/base.scss";
+
+.organiza_menu {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  padding: 10px 0;
+}
+.menu-mobile {
+  visibility: hidden;
+  height: 0;
+}
+@media screen and (max-width: 768px) {
+  .menuzinho {
+    cursor: auto;
+    & div {
+      width: 30px;
+      height: 3px;
+      background: $cor-do-menu-mobile;
+      border-radius: 4px;
+      margin: 5px 0;
+    }
+  }
+  .visible {
+    height: auto;
+    & .menu {
+      height: 110px;
+      visibility: visible;
+    }
+  }
+  .menu-mobile {
+    & .menu {
+      transition: height 0.5s ease-out;
+      background: rgb(243, 243, 243);
+      text-align: center;
+      box-shadow: inset 0 2px 5px #c0c0c0;
+      width: 100%;
+      height: auto;
+      & ul {
+        flex-direction: column;
+        & li {
+          border-top: 1px solid rgb(255, 255, 255);
+          padding: 10px 0px;
+        }
+      }
+    }
+  }
+  .disable {
+    display: none;
+  }
+}

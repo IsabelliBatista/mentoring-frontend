@@ -1,15 +1,14 @@
 import React from 'react';
-import Button from './components/Button/index';
-import Menu from './components/Menu/index';
-import Container from './components/Container/index';
+import Meio from './components/Meio';
+import Rodape from './components/Rodape';
+import Topo from './components/Topo';
 
 function App() {
   return (
     <div className="App">
-      <Container>
-      <Menu></Menu>
-      <Button></Button>
-      </Container>
+      <Topo/>
+      <Meio/>
+      <Rodape/>
     </div>
   );
 }

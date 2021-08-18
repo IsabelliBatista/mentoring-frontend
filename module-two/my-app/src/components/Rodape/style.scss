@@ -1,0 +1,41 @@
+@import "../../styles/base.scss";
+
+.rodape {
+  background-color: $cor-do-rodape;
+  height: 216px;
+  & .rodape-parte1 {
+    padding-bottom: 20px;
+    padding-top: 50px;
+    border-bottom: 1px solid #ccc;
+    & h5 {
+      font-weight: 400;
+    }
+  }
+  .rodape-parte2 {
+    padding: 15px 0;
+  }
+  .rodape-divs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .rodape-icons {
+      & ul {
+        list-style: none;
+        display: flex;
+        width: 245px;
+        justify-content: space-between;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rodape {
+    height: auto;
+    & .rodape-divs {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}

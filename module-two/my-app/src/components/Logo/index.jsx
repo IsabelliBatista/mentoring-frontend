@@ -1,7 +1,9 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 
 const Logo = () =>{
-    return
+    return(
+        <img src="logo.png" alt="logo-mentoring" />
+    );
 }
 export default Logo;

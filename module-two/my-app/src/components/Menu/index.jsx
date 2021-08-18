@@ -1,9 +1,10 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 
-const Menu = () =>{
+const Menu = (props) =>{
+  const { className } = props;
     return(
-        <div className="menu">
+        <div className={`menu ${className}`}>
           <ul>
             <li>Home</li>
             <li>About</li>

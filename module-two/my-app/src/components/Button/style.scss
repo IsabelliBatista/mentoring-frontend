@@ -1,0 +1,14 @@
+@import "../../styles/base.scss";
+
+.acao {
+  width: 245px;
+  text-align: right;
+  & .btn {
+    border: none;
+    background-color: $color-padrao-btn;
+    padding: 9px 75px;
+    border-radius: 2px;
+    font-family: "Roboto";
+    color: $color-branco;
+  }
+}

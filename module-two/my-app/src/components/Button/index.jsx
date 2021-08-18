@@ -1,9 +1,11 @@
 import React from 'react';
-import './style.css';
+import './style.scss';
 
-const Button = () =>{
+const Button = (props) =>{
+  const {className} = props;
+
     return(
-        <div className="acao">
+        <div className={`acao ${className}`}>
           <button className="btn">Entrar</button>
         </div>
     );
