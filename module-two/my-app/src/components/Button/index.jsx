@@ -2,11 +2,11 @@ import React from 'react';
 import './style.scss';
 
 const Button = (props) =>{
-  const {className} = props;
+  const {className, children} = props;
 
     return(
         <div className={`acao ${className}`}>
-          <button className="btn">Entrar</button>
+          <button className="btn">{children}</button>
         </div>
     );
 }

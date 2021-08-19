@@ -12,7 +12,7 @@ const Rodape = () =>{
                 <div className="rodape-parte1 rodape-divs">
                     <h5>@2021 Frontend Mentoring</h5>
                     <Logo/>
-                    <Button className="disable"/>
+                    <Button className="disable">Entrar</Button>
                 </div>
                 <div className="rodape-parte2 rodape-divs">
                     <Menu/>

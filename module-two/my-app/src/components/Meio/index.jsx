@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button'
 import Container from '../Container';
 import './style.scss';
 
@@ -11,7 +12,7 @@ const Meio = () =>{
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus 
                     <br/><br/>
                     mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-                    <button class="btn">Cadastre-se</button>
+                    <Button>Cadastre-se</Button>
                 </div>
 
                 <div class="group-img">

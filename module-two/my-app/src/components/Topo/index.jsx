@@ -18,12 +18,12 @@ const Topo = () =>{
     }
     
     return(
-        <div>
+        <>
             <Container>
                 <div className="organiza_menu">
                     <Menu className="disable"/>
                     <Logo />
-                    <Button className="disable"/>
+                    <Button className="disable">Entrar</Button>
                     <div className="menuzinho" onClick={handleState}>
                         <div></div>
                         <div></div>
@@ -40,7 +40,7 @@ const Topo = () =>{
                     </ul>
                 </div>
             </div>
-      </div>
+      </>
     );
 }
 export default Topo;
