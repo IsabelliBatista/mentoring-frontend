@@ -1,0 +1,74 @@
+@import "../../styles/base.scss";
+
+.modal {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.137);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 30%;
+  height: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #a8a8a8;
+}
+.fechar {
+  width: 30px;
+  float: right;
+  height: 30px;
+  background: aqua;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card h3 {
+  margin: 60px 0;
+  text-align: center;
+  font-size: 25px;
+}
+input {
+  padding: 13px 140px 13px 15px;
+  border-radius: 25px;
+  border: 1px solid #0f173d;
+  margin-bottom: 15px;
+}
+button {
+  padding: 13px 140px;
+  background-color: #0f173d;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.redes {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-modal ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.icons-modal ul li {
+  padding: 15px 17px;
+  margin: 10px;
+  background-color: #0f173d;
+  border-radius: 30px;
+}
