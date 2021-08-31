@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import Button from '../Button';
 import Container from '../Container';
 import Logo from '../Logo';
+import Modal from '../Modal'
 import Menu from '../Menu';
 import './style.scss';
 
 const Topo = () =>{
 
     const[count, setCount] = useState(false);
+    const[abrir, setAbrir] = useState(false);
 
-    const handleState = () =>{
+    const handleState = () => {
         if(count == true){
             setCount(false);
         } else{
@@ -23,7 +25,9 @@ const Topo = () =>{
                 <div className="organiza_menu">
                     <Menu className="disable"/>
                     <Logo />
-                    <Button className="disable">Entrar</Button>
+                    <Button className="disable" onClick={()=> setAbrir(true)}>Entrar</Button>
+                    {abrir ? <Modal onClose={()=> setAbrir(false)} /> : null}
+                    
                     <div className="menuzinho" onClick={handleState}>
                         <div></div>
                         <div></div>
@@ -40,6 +44,7 @@ const Topo = () =>{
                     </ul>
                 </div>
             </div>
+            
       </>
     );
 }

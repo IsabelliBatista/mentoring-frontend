@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 
-const Modal = () =>{
+const Modal = (props) =>{
+    const {onClose} = props;
+
+    const [fechar, setFechar] = useState(false);
+
+
+    const handleFechar = () => {
+        if(fechar == false){
+            setFechar(true)
+        }
+    }
+    
+
     return(
         <>
-        <div className="modal">
+        <div className="modal"> 
             <div className="card">
-                <div className="fechar"></div>
+                <div className="fechar" onClick={onClose}>
+                    <div className="x1"></div>
+                    <div className="x2"></div>
+                </div>
                 <h3>Bem vindo</h3>
                 <div className="forms">
                 <input type="email" name="email" id="email" placeholder="Digite seu email"/>

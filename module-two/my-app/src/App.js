@@ -10,7 +10,7 @@ function App() {
       <Topo/>
       <Meio/>
       <Rodape/>
-      <Modal/>
+      
     </div>
   );
 }

@@ -15,8 +15,7 @@
 }
 
 .card {
-  width: 30%;
-  height: 600px;
+  padding: 10px 50px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 20px #a8a8a8;
@@ -25,7 +24,10 @@
   width: 30px;
   float: right;
   height: 30px;
-  background: aqua;
+  position: relative;
+  margin: 15px;
+  cursor: pointer;
+  margin-right: 0;
 }
 .forms {
   display: flex;
@@ -50,6 +52,7 @@ button {
   color: #fff;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  border-style: none;
 }
 
 .redes {
@@ -71,4 +74,39 @@ button {
   margin: 10px;
   background-color: #0f173d;
   border-radius: 30px;
+}
+.icons-modal ul li:hover {
+  transition: transform 1s;
+  transform: rotate(90deg);
+}
+h5:hover {
+  transition: transform 1s;
+  transform: translateX(10px) scale(1.2);
+}
+.x1 {
+  content: ".";
+  transform: rotate(45deg);
+  width: 3px;
+  height: 22px;
+  background: #000;
+  position: absolute;
+  top: 3px;
+  right: 14px;
+}
+
+.x2 {
+  content: ".";
+  width: 3px;
+  height: 22px;
+  background: #000;
+  float: inline-start;
+  float: right;
+  transform: rotate(312deg);
+  position: absolute;
+  top: 3px;
+  left: 13px;
+}
+.fechar:hover {
+  transition: transform 1s;
+  transform: rotate(90deg);
 }
