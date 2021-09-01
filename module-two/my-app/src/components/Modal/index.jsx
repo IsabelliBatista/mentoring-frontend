@@ -2,21 +2,18 @@ import React, { useState } from 'react';
 import './style.scss';
 
 const Modal = (props) =>{
-    const {onClose} = props;
-
-    const [fechar, setFechar] = useState(false);
-
-
-    const handleFechar = () => {
-        if(fechar == false){
-            setFechar(true)
-        }
+    const {id = 'modal', onClose} = props;
+    const handleOut = (e) =>{
+        if(e.target.id === id) onClose();
     }
+
+    
     
 
     return(
         <>
-        <div className="modal"> 
+        
+        <div className="modal" id={id} onClick={handleOut}> 
             <div className="card">
                 <div className="fechar" onClick={onClose}>
                     <div className="x1"></div>
